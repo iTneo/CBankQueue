@@ -1,2 +1,2 @@
 # CBankQueue
-A simple Bank Queue write with C queues for educational purposes
+A simple Bank Queue write with C lists for educational purposes
