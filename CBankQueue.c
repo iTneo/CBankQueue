@@ -31,3 +31,13 @@ void insere_fila(ponteiro_de_no fila){
     fila->categoria = categoria;
     fila->proximo = NULL;
 }
+
+void remove_ultimo(ponteiro_de_no fila){
+    ponteiro_de_no atual;
+    atual = (ponteiro_de_no) malloc(sizeof(no));
+    atual = fila;
+    if (fila->proximo != NULL){
+        fila = fila->proximo;
+        atual->proximo = fila->proximo;
+    }
+}
