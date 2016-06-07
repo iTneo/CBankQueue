@@ -12,7 +12,7 @@ typedef no *ponteiro_de_no;
 ponteiro_de_no fila;
 int operacao;
 
-void fila_inserir(ponteiro_de_no fila){
+void insere_fila(ponteiro_de_no fila){
     char categoria;
     int contador_de_categoria = 0;
 
@@ -28,5 +28,6 @@ void fila_inserir(ponteiro_de_no fila){
     fila->proximo = (ponteiro_de_no) malloc(sizeof(no));
     fila = fila->proximo;
     fila->sequencia = ++contador_de_categoria;
+    fila->categoria = categoria;
     fila->proximo = NULL;
 }
